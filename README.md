@@ -11,13 +11,13 @@ database icinden data almak icin
 get fonksiyonlarini tanimliyoruz
 database icine data gondermek icin 
 set fonksiyonlarini tanimliyoruz
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 DataAccess Katmanı altında abstracts katmanı altında
 BrandRepository dosyasında
 Entities katmani altindaki Brand Class icinde yer alan id ve name degerleri uzerinden database icindeki
 tum datalari getAll Fonksiyonunu kullanarak listeliyoruz
 Listeleme islemi Icin List Tipindeki Array yapisini kullaniyoruz
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 DataAccess Katmanı altında concretes katmanı altında
 InMemoryBrandRepository dosyasında
 Repository kullanarak database icideki datalara ulasmak icin kullanildigini belirtiyoruz
@@ -38,12 +38,12 @@ DataAccess katmani altindaki
 Abstracts katmini altinda bulunan
 BrandRepository interface icindeki 
 List Brand GetAll fonksiyonu ile database icindeki tum brand leri donduruyoruz.
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 Business Katmanı altında Abstracts katmanı altında
 BrandService dosyasında
 List tipindeki array list yapisini kullanarak database icindeki Brand ulasiyoruz
 getAll fonksiyonu ile listeme islemini yaoiyoruz
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 Business Katmanı altında Concretes katmanı altında
 BrandManager dosyasında
 Service kullanarak BrandManager class i icindeki islemlere ulasilmasini kolaylastirmak icin
@@ -54,7 +54,7 @@ BrancManager parametreli constructor icinde datanin gelecegi yeri belirtiyoruz
 BrandService interface icinden gelen List tipindeki Brand leri getiren fonksiyon icinde
 brandRepository uzerinden getAll fonksiyonu ile 
 InMemoryBrandRepository icinde girdigimiz data lari donduruyoruz
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 WebApi katmanı altında controllers katmanı altında
 BrandsController dosyasında
 RestController uzerinden browser araciligi ile 
@@ -69,7 +69,7 @@ GetMapping kullanarak browser uzerinden kullaniciya gosterilecek brand bilgileri
 gpsterilmesi icin browser da girilmesi gereken adres bilgisini belirtiyoruz
 List tipindeki array list icinde Brand leri listeliyoruz
 Bu islem ile browser uzerinden brand leri kullaniciya gosteriyoruz
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 Proje klasörü içinde Pom.xml dosyasında
 InMemory calisacak uygulamalarda Spring Data JPA ve 
 				PostgreSQL in devre disi birakilmasi gerekiyor
